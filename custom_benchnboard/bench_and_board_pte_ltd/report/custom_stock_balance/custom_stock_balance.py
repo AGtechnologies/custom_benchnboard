@@ -20,13 +20,8 @@ def execute(filters=None):
 				qty_dict = iwb_map[company][item][wh]
 				data.append([item, item_map[item]["item_name"],
 					item_map[item]["item_group"],
-					item_map[item]["brand"],
 					item_map[item]["description"], wh,
-					item_map[item]["stock_uom"], qty_dict.opening_qty,
-					qty_dict.opening_val, qty_dict.in_qty,
-					qty_dict.in_val, qty_dict.out_qty,
-					qty_dict.out_val, qty_dict.bal_qty,
-					qty_dict.bal_val, qty_dict.val_rate,
+					item_map[item]["stock_uom"], qty_dict.bal_qty,
 					company
 				])
 
@@ -35,9 +30,9 @@ def execute(filters=None):
 def get_columns(filters):
 	"""return columns based on filters"""
 
-	columns = ["Item:Link/Item:100", "Item Name::150", "Item Group::100", "Brand::90", \
-	"Description::140", "Warehouse:Link/Warehouse:100", \
-	"Balance Qty:Float:100"]
+	columns = ["Item:Link/Item:100", "Item Name::150", "Item Group::100", \
+	"Description::140", "Warehouse:Link/Warehouse:100", "Stock UOM:Link/UOM:90", "Balance Qty:Float:100", \
+	"Company:Link/Company:100"]
 
 	return columns
 

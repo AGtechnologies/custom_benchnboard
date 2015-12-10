@@ -6,7 +6,7 @@
  "custom": 0, 
  "docstatus": 0, 
  "doctype": "DocType", 
- "document_type": "Document", 
+ "document_type": "Other", 
  "fields": [
   {
    "allow_on_submit": 0, 
@@ -42,7 +42,7 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2015-12-09 13:43:34.717233", 
+ "modified": "2015-12-09 14:08:00.828327", 
  "modified_by": "Administrator", 
  "module": "Bench and Board Pte Ltd", 
  "name": "Bench and Board", 
